@@ -83,7 +83,7 @@ README.md                 # This file
 
 ## 📷 Screenshot
 
-<img src="https://user-images.githubusercontent.com/your_image.png" width="600"/>
+<img src="[https://user-images.githubusercontent.com/your_image.png](https://github.com/zaifi320/laptop-price-prediction-app/blob/2256a573222229f60c754672df4e5b7c8d46834c/GUI_Sample.png)" width="600"/>
 
 ---
 
