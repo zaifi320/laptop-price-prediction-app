@@ -1,132 +1,112 @@
-## 💻 Laptop Price Predictor
+# 💻 Laptop Price Prediction with GUI (Jupyter Notebook Version)
 
-This is a machine learning project that predicts the price of a laptop based on its specifications such as brand, processor type, RAM size, storage, GPU brand, and more. The project includes a user-friendly **Tkinter GUI** for easy price prediction without using code.
-
----
-
-### 📸 GUI Preview
-
-<img src="screenshot.png" width="600"/>
+This project is a **Machine Learning-based Laptop Price Predictor** that uses a trained regression model to estimate laptop prices based on specifications such as brand, CPU, RAM, GPU, etc. The model is integrated with a **Tkinter GUI**, and the entire system runs within a **Jupyter Notebook**.
 
 ---
 
-## 🚀 Features
+## 📌 Features
 
-* One-click laptop price prediction
-* Built with `scikit-learn` and `Tkinter`
-* Uses OneHotEncoding and Linear Regression
-* Supports categorical and numerical features
-* Real-time input and instant prediction
-* Clean, interactive graphical interface
-
----
-
-## 🧠 Model Details
-
-* **Model Type:** Linear Regression
-* **Preprocessing:** OneHotEncoder for categorical features
-* **Log Transformation:** Target variable (Price) is log-transformed for better accuracy
-* **Pipeline:** Sklearn pipeline for combining preprocessing and model
+* 🔍 Predict laptop price based on user inputs
+* 📊 Cleaned and processed dataset with feature engineering
+* 🧠 Built with `Linear Regression` using `scikit-learn`
+* 🧱 Uses `OneHotEncoder` for categorical features
+* 🖥️ GUI built using `Tkinter` inside the notebook
+* 📁 Includes data preprocessing, model training, evaluation, and prediction
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
-* Python 3
-* Pandas
-* Numpy
-* Scikit-learn
-* Tkinter (GUI)
-* Seaborn / Matplotlib (Data Analysis)
-* Joblib (Model saving)
+* Python
+* Jupyter Notebook
+* pandas, NumPy
+* scikit-learn
+* Tkinter
+* matplotlib (optional, for visualization)
 
 ---
 
-## 🗂️ Project Structure
+## 📁 Project Structure
 
 ```
-Laptop-Price-Predictor/
-│
-├── Laptop Prediction.ipynb      # Jupyter Notebook for data analysis & model training
-├── app.py                       # Main file to run GUI application
-├── model.pkl                    # Trained model pipeline (joblib file)
-├── requirements.txt             # All dependencies
-├── README.md                    # Project documentation
-└── screenshot.png               # Image of the GUI (optional)
+Laptop Prediction.ipynb   # Main notebook with full code (preprocessing + training + GUI)
+saved_data.csv           # Laptop dataset used for training
+requirements.txt          # List of required Python packages
+README.md                 # This file
 ```
 
 ---
 
-## ⚙️ Installation
+## 🧠 Model Overview
 
-1. **Clone the repo**
+* **Target Variable:** Laptop price (log-transformed)
 
-   ```bash
-   git clone https://github.com/your-username/Laptop-Price-Predictor.git
-   cd Laptop-Price-Predictor
-   ```
+* **Features Used:**
 
-2. **Install dependencies**
+  * Brand
+  * CPU
+  * RAM type and size
+  * Storage (HDD, SSD)
+  * GPU Brand
+  * Operating System
+  * Generation
+  * Number of Cores
+  * PPI (Pixels Per Inch)
+
+* **Preprocessing Steps:**
+
+  * One-hot encoding for categorical columns
+  * Feature scaling (if needed)
+  * Model trained using `LinearRegression` from `sklearn`
+
+---
+
+## 🧪 How to Use
+
+1. 📥 Clone or download this repository.
+
+2. 🔧 Install the dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the application**
+3. ▶️ Open the `Laptop Prediction.ipynb` in Jupyter Notebook.
 
-   ```bash
-   python app.py
-   ```
+4. 🔢 Run all cells one by one.
 
----
+5. 🖱️ A Tkinter GUI window will pop up.
 
-## 📋 How to Use
-
-1. Open the GUI by running `app.py`
-2. Fill in laptop specs like Brand, Core, RAM, etc.
-3. Click **Predict** and get the estimated price instantly
+6. 👨‍💻 Fill in laptop specs and click **Predict Price** to get an estimated price.
 
 ---
 
-## 📁 Dataset
+## 📷 Screenshot
 
-* The dataset was cleaned and preprocessed in the Jupyter Notebook.
-* Features include:
-
-  * Brand
-  * CPU type
-  * RAM type
-  * Generation
-  * Core
-  * RAM size
-  * Storage (HDD/SSD)
-  * GPU Brand
-  * Operating System
-  * PPI (Pixels per inch)
+<img src="https://user-images.githubusercontent.com/your_image.png" width="600"/>
 
 ---
 
-## 📌 Output
+## 📌 Note
 
-* The model predicts **log price**, which is converted back to the **actual price** using exponentiation.
-* Prediction is shown directly in the GUI.
+* The GUI is embedded **within the notebook**. No `.py` file is needed to launch it.
+* If you want to convert it into a `.py` script later, we can help refactor it.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This model provides **approximate price predictions** based on historical data. It may not reflect the exact market price of new or used laptops.
+This project is for **educational purposes only**. The price predictions are based on historical data and a simplified model and should not be used for real-world financial decisions.
 
 ---
 
-## 💬 Feedback
+## 🗣️ Feedback
 
-Have suggestions or found a bug? Feel free to open an issue or submit a pull request!
+If you find any bugs, have suggestions, or want to improve the GUI or model, feel free to open an issue or pull request. ⭐ the repo if you found it helpful!
 
 ---
 
-Let me know if you want:
-
-* Urdu version
-* A logo/banner
-* Deployment guide (e.g., using PyInstaller or Streamlit)
+## 👤 Author
+Huzaifa Saeed
+📧 huzaifasaeed661@gmail.com
+🔗 www.linkedin.com/in/huzaifabinsaeed
